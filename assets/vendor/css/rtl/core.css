@@ -34415,3 +34415,26 @@ a.bg-vimeo:hover, a.bg-vimeo:focus {
 .footer.bg-lighter hr {
   border-color: rgba(68, 64, 80, 0.0774680392);
 }
+
+/* Perbaikan navbar untuk layar kecil */
+@media (max-width: 576px) {
+  /* Perkecil logo */
+  .app-brand-logo img {
+    max-height: 28px;
+    width: auto;
+  }
+
+  /* Atur ukuran dan jarak teks Dashboard */
+  .layout-navbar .menu-text {
+    font-size: 0.95rem; /* lebih kecil biar muat */
+    margin-left: 6px;   /* jarak dari logo */
+    white-space: nowrap; /* cegah teks turun baris */
+  }
+
+  /* Rapatkan padding navbar */
+  nav.layout-navbar {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
