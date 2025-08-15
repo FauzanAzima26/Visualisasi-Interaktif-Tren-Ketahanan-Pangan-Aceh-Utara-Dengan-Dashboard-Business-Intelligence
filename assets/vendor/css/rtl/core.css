@@ -34416,25 +34416,66 @@ a.bg-vimeo:hover, a.bg-vimeo:focus {
   border-color: rgba(68, 64, 80, 0.0774680392);
 }
 
-/* Perbaikan navbar untuk layar kecil */
+/* Perbaikan navbar untuk layar ≤576px */
 @media (max-width: 576px) {
-  /* Perkecil logo */
+  /* Logo sedikit lebih kecil */
   .app-brand-logo img {
-    max-height: 28px;
+    max-height: 24px;
     width: auto;
   }
 
-  /* Atur ukuran dan jarak teks Dashboard */
+  /* Teks Dashboard sedikit mengecil */
   .layout-navbar .menu-text {
-    font-size: 0.95rem; /* lebih kecil biar muat */
-    margin-left: 6px;   /* jarak dari logo */
-    white-space: nowrap; /* cegah teks turun baris */
+    font-size: 0.9rem;
+    margin-left: 5px;
   }
 
-  /* Rapatkan padding navbar */
-  nav.layout-navbar {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+  /* Tombol Login/Register ikut mengecil */
+  .layout-navbar .btn.btn-primary {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+
+  /* Icon login dalam tombol menyesuaikan */
+  .layout-navbar .btn.btn-primary .tf-icons {
+    font-size: 1.05rem;
+    margin-right: 4px;
+  }
+
+  /* Pastikan sejajar vertikal */
+  .layout-navbar .navbar-brand,
+  .layout-navbar .btn.btn-primary {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Perbaikan navbar untuk layar ≤360px */
+@media (max-width: 360px) {
+  /* Logo lebih kecil lagi */
+  .app-brand-logo img {
+    max-height: 20px;
+    width: auto;
+  }
+
+  /* Teks Dashboard mengecil lagi */
+  .layout-navbar .menu-text {
+    font-size: 0.8rem;
+    margin-left: 4px;
+  }
+
+  /* Tombol Login/Register proporsional */
+  .layout-navbar .btn.btn-primary {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    line-height: 1.1;
+  }
+
+  /* Icon login lebih kecil */
+  .layout-navbar .btn.btn-primary .tf-icons {
+    font-size: 0.95rem;
+    margin-right: 3px;
   }
 }
 
